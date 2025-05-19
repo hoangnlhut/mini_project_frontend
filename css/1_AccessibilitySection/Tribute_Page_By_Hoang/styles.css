@@ -18,18 +18,20 @@ header, main, .timeline, footer{
     flex-wrap: wrap;
 }
 
-img{
-    display: block;
-    width: 100%;
-    
-}
-
-.image-container{
+.img-div{
     background-color: white;
     color: black;
     box-sizing: border-box;
     padding: 10px;
 }
+
+#image{
+    display: block;
+    width: 100%;
+    
+}
+
+
 
 .bold{
     font-weight: bold;
