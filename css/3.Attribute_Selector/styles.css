@@ -1,0 +1,13 @@
+a[href] {
+  color: rgb(255, 0, 234);
+  text-decoration: underline;
+}
+
+a[title] {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+a[href][title] {
+  color: green;
+}
