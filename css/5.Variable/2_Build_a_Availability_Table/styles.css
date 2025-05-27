@@ -1,0 +1,139 @@
+:root{
+    --solid-border: 1px solid #2e2828;
+    --dashed-border: 1px dashed #2e2828;
+    --color0: #ffffff;
+    --color1: #defcfd;
+    --color2: #c5fdfa;
+    --color3: #81fff9;
+    --color4: #3bfaea;
+    --color5: #00e1ff;
+}
+
+body{
+    background-color: #defcfd;
+}
+
+table{
+    border-spacing: 0;
+}
+
+.building{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+  font-weight: bold;
+  border: none !important;
+  background-color: transparent !important;
+  position: relative;
+  top: 0.4em;
+  text-align: right;
+  padding-right: 0.5em !important;
+}
+
+.first-time{
+  top: -0.6em;
+}
+
+.empty{
+    height: 1em;
+}
+
+
+tbody > tr:nth-of-type(even) > td{
+    border-bottom: var(--solid-border);
+    border-left: var(--solid-border);
+    border-right: var(--solid-border);
+    padding: 0;
+}
+
+tbody > tr:nth-of-type(odd) > td{
+    border-bottom: var(--dashed-border);
+    border-left: var(--solid-border);
+    border-right: var(--solid-border);
+    border-top: var(--solid-border);
+    padding: 0;
+}
+
+
+td[class^="available-"]{
+    width: 5rem;
+}
+
+.available-0{
+    background-color: var(--color0);
+}
+
+.available-1{
+    background-color: var(--color1);
+}
+
+.available-2{
+    background-color: var(--color2);
+}
+
+.available-3{
+    background-color: var(--color3);
+}
+
+.available-4{
+    background-color: var(--color4);
+}
+
+.available-5{
+    background-color: var(--color5);
+}
+
+#legend{
+    padding-top: 2em;
+    padding-bottom: 0.2em;   
+}
+
+#legend-gradient-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#legend-gradient{
+    width: 20%;
+    height: 1em;
+    display: flex;
+    border: 1px solid #2e2828;
+}
+
+#legend-gradient > div{
+    width: 18%;
+}
+
+#legend-gradient > div:nth-child(1){
+    background-color: var(--color0);
+}
+
+#legend-gradient > div:nth-child(2){
+    background-color: var(--color1);
+}
+
+#legend-gradient > div:nth-child(3){
+    background-color: var(--color2);
+}
+
+#legend-gradient > div:nth-child(4){
+    background-color: var(--color3);
+}
+
+#legend-gradient > div:nth-child(5){
+    background-color: var(--color4);
+}
+
+#legend-gradient > div:nth-child(6){
+    background-color: var(--color5);
+}
+
+.add-padding{
+    padding-left: 1em;
+    padding-right: 1em;
+}

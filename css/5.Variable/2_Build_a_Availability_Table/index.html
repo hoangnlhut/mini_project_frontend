@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Availability Table by hoang</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="building">
+      <table>
+        <thead>
+          <tr>
+            <th class="time"></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td class="time">9 AM</td>
+            <td></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td></td>
+            <td class="available-5"></td>
+          </tr> -->
+          <tr>
+            <td class="time first-time">9 AM</td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">10 AM</td>
+            <td class="available-1"></td>
+            <td class="available-0"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">11 AM</td>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-4"></td>
+            <td class="available-0"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">12 PM</td>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">1 PM</td>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+            <td class="available-0"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">2 PM</td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">3 PM</td>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+            <td class="available-0"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">4 PM</td>
+            <td class="available-1"></td>
+            <td class="available-0"></td>
+            <td class="available-3"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time empty"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+            <td class="available-5"></td>
+          </tr>
+          <tr>
+            <td class="time">5 PM</td>
+            <td class="available-1"></td>
+            <td class="available-0"></td>
+            <td class="available-3"></td>
+            <td class="available-4"></td>
+            <td class="available-2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="building">
+      <div id="legend">
+        <span>Availability</span>
+      </div>
+      <div id="legend-gradient-container">
+        <div class="add-padding"><span>0</span></div>
+        <div id="legend-gradient">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="add-padding"><span>5+</span></div>
+      </div>
+    </div>
+  </body>
+</html>
