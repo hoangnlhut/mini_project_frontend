@@ -1,0 +1,16 @@
+body{
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 2rem;
+}
+
+/* main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
