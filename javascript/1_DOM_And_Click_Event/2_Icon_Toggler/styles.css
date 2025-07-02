@@ -1,0 +1,11 @@
+.favorite-icon{
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filled {
+    color: red;
+    font-size: 25px;
+}
