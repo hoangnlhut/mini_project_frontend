@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customer Complaint Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Customer Complaint Form</h1>
+        <p>
+          We value your feedback and are committed to resolving your concerns
+        </p>
+      </div>
+
+      <div class="form-container">
+        <form id="complaint-form">
+          <div class="form-group">
+            <label for="full-name"
+              >Full Name <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              >Email Address <span class="required">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="order-no"
+              >Order Number <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="order-no"
+              name="order-no"
+              placeholder="2024XXXXXXXX (10 digits starting with 2024)"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="product-code"
+              >Product Code <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="product-code"
+              name="product-code"
+              placeholder="XX##-X###-XX# (e.g., AB12-C345-DE6)"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="quantity"
+              >Quantity <span class="required">*</span></label
+            >
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              placeholder="Enter quantity"
+              min="1"
+            />
+          </div>
+
+          <fieldset id="complaints-group">
+            <legend>Type of Complaint <span class="required">*</span></legend>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="defective"
+                  name="complaint"
+                  value="defective"
+                />
+                <label for="defective">Defective Product</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="damaged"
+                  name="complaint"
+                  value="damaged"
+                />
+                <label for="damaged">Damaged in Shipping</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="wrong-item"
+                  name="complaint"
+                  value="wrong-item"
+                />
+                <label for="wrong-item">Wrong Item Received</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="poor-quality"
+                  name="complaint"
+                  value="poor-quality"
+                />
+                <label for="poor-quality">Poor Quality</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  id="other-complaint"
+                  name="complaint"
+                  value="other"
+                />
+                <label for="other-complaint">Other</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="complaint-description">Complaint Description</label>
+            <textarea
+              id="complaint-description"
+              name="complaint-description"
+              placeholder="Please describe your complaint in detail (required if 'Other' is selected - minimum 20 characters)"
+            ></textarea>
+          </div>
+
+          <fieldset id="solutions-group">
+            <legend>Preferred Solution <span class="required">*</span></legend>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="refund"
+                  name="solution"
+                  value="refund"
+                />
+                <label for="refund">Full Refund</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="replacement"
+                  name="solution"
+                  value="replacement"
+                />
+                <label for="replacement">Product Replacement</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="store-credit"
+                  name="solution"
+                  value="store-credit"
+                />
+                <label for="store-credit">Store Credit</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="repair"
+                  name="solution"
+                  value="repair"
+                />
+                <label for="repair">Repair Service</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="other-solution"
+                  name="solution"
+                  value="other"
+                />
+                <label for="other-solution">Other</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="solution-description">Solution Description</label>
+            <textarea
+              id="solution-description"
+              name="solution-description"
+              placeholder="Please describe your preferred solution (required if 'Other' solution is selected - minimum 20 characters)"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Complaint</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
